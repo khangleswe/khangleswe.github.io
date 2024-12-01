@@ -1,13 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>khangleswe.me</title>
+    <title>Full Stack Software Engineer - John Doe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
-    Hello, World!
+<!-- Header with Name and Contact -->
+<header class="header">
+    <div class="container">
+        <div class="profile">
+            <img src="profile-pic.png" alt="Profile Picture" class="profile-img">
+            <div class="name-title">
+                <h1 class="name">John Doe</h1>
+                <p class="title">Full Stack Software Engineer</p>
+            </div>
+        </div>
+        <div class="contact">
+            <p>Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/johndoe" target="_blank" class="button linkedin">LinkedIn</a>
+                <a href="https://github.com/johndoe" target="_blank" class="button github">GitHub</a>
+                <a href="https://portfolio.com" target="_blank" class="button portfolio">Portfolio</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Me Section -->
+<section class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am a dedicated Full Stack Software Engineer with over 5 years of experience in building efficient, scalable web applications. My expertise spans frontend development with React.js and Angular, backend development with Node.js, and cloud technologies. I specialize in high-performance systems, leveraging tools like Kafka, Redis, and RabbitMQ to handle high traffic loads and optimize response times. My goal is to develop software that solves real-world problems while ensuring code quality and maintainability.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>React.js, Angular, Redux, Next.js</li>
+                    <li>HTML5, CSS3, SASS, Tailwind CSS</li>
+                    <li>Responsive Web Design, Cross-Browser Compatibility</li>
+                    <li>State Management with Redux, Context API, and Hooks</li>
+                    <li>Component Lifecycle, Virtual DOM, JSX</li>
+                    <li>Frontend Testing: Jest, Cypress</li>
+                    <li>Webpack, Babel, NPM, Yarn</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js, Express.js, RESTful APIs, GraphQL</li>
+                    <li>Python (Flask, Django), Golang (Gin, Echo)</li>
+                    <li>Authentication & Authorization (JWT, OAuth, Passport.js)</li>
+                    <li>Database Design & Optimization (MySQL, PostgreSQL, MongoDB, Redis)</li>
+                    <li>Asynchronous Programming: Promises, Async/Await</li>
+                    <li>Event-Driven Architecture (Kafka, RabbitMQ, WebSockets)</li>
+                    <li>API Documentation: Swagger, OpenAPI</li>
+                    <li>Backend Testing: Mocha, Chai, Supertest</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>DevOps & Cloud</h3>
+                <ul>
+                    <li>AWS, Google Cloud Platform, Azure</li>
+                    <li>Docker, Kubernetes, Helm</li>
+                    <li>CI/CD: Jenkins, CircleCI, GitLab, TravisCI</li>
+                    <li>Infrastructure as Code: Terraform, CloudFormation, Ansible</li>
+                    <li>Serverless Architecture: AWS Lambda, Google Cloud Functions</li>
+                    <li>Monitoring & Logging: Prometheus, Grafana, ELK Stack</li>
+                    <li>Cloud Networking: VPC, Load Balancers, API Gateway</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Design Principles</h3>
+                <ul>
+                    <li>SOLID Principles, Design Patterns (MVC, Factory, Singleton, Observer)</li>
+                    <li>Test-Driven Development (TDD), Unit Testing, Integration Testing</li>
+                    <li>Version Control and Collaboration (Git, GitFlow, GitHub, GitLab)</li>
+                    <li>Agile Methodologies: Scrum, Kanban, Jira</li>
+                    <li>Containerization: Docker, Multi-Stage Builds</li>
+                    <li>Code Reviews and Pair Programming</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Experience Section -->
+<section class="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Software Engineer | XYZ Corp | 2022 - Present</h3>
+            <ul>
+                <li>Developed and maintained web applications using React.js and Node.js for a large-scale e-commerce platform.</li>
+                <li>Built scalable REST APIs and GraphQL endpoints to handle over 10,000 concurrent requests per second.</li>
+                <li>Implemented microservices architecture using Kafka and RabbitMQ for asynchronous communication between services.</li>
+                <li>Optimized application performance by introducing Redis caching, reducing response times by 40%.</li>
+                <li>Worked with Kubernetes for container orchestration and AWS EKS for seamless scaling and high availability.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Junior Developer | ABC Tech | 2020 - 2022</h3>
+            <ul>
+                <li>Developed responsive and dynamic front-end applications using Angular and React.js for internal tools.</li>
+                <li>Collaborated with backend teams to design and implement RESTful APIs using Node.js and Express.js.</li>
+                <li>Utilized Git and GitHub for version control and continuous integration using Jenkins and CircleCI.</li>
+                <li>Implemented testing strategies for frontend and backend applications using Jest and Mocha.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="degree">
+            <h3>Bachelor's in Computer Science | University of Example | 2016 - 2020</h3>
+            <p>Graduated with honors. Key courses included Data Structures & Algorithms, Web Development, Distributed Systems, and Cloud Computing.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="certifications">
+    <div class="container">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified Solutions Architect - Associate</li>
+            <li>Google Cloud Certified - Professional Cloud Architect</li>
+            <li>Certified Kubernetes Administrator (CKA)</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>E-commerce Web Application</h3>
+            <p><strong>Technologies:</strong> React.js, Node.js, MongoDB, Redis, Docker</p>
+            <p>Developed a full-stack e-commerce web app with a real-time shopping cart using Redis for session storage. Deployed using Docker containers and AWS ECS.</p>
+            <a href="https://github.com/johndoe/ecommerce-app" target="_blank">GitHub Repository</a>
+        </div>
+        <div class="project">
+            <h3>Chat Application</h3>
+            <p><strong>Technologies:</strong> Node.js, Socket.IO, MongoDB</p>
+            <p>Built a real-time chat app with Socket.IO, allowing users to join rooms, send messages, and receive instant updates.</p>
+            <a href="https://github.com/johndoe/chat-app" target="_blank">GitHub Repository</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
