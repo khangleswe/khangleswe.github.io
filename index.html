@@ -6,7 +6,6 @@
     <title>khangleswe.github.io</title>
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #ffffff;
@@ -15,8 +14,8 @@
 
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 8px auto;
+            padding: 8px;
         }
 
         h1 {
@@ -26,14 +25,14 @@
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 18px;
             border-bottom: 2px solid #444;
             padding-bottom: 5px;
             margin-top: 30px;
         }
 
-        h4 {
-            margin-bottom: 0px;
+        h3 {
+            font-size: 16px;
         }
 
         .contact {
@@ -44,7 +43,13 @@
 
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: -10px;
+            margin-top: 6px;
+        }
+
+        ul li {
+            font-size: 16px;
+            margin: 2px;
         }
 
         .section h2 {
@@ -56,8 +61,12 @@
             margin-bottom: 5px;
         }
 
+        .section .project {
+            font-size: 16px;
+        }
+
         .sub-info {
-            font-size: 14px;
+            font-size: 15px;
             color: #555;
             margin-bottom: 0px;
             margin-top: 10px;
@@ -78,7 +87,7 @@
             font-size: 15px;
             color: #555;
             margin-bottom: 0px;
-            margin-top: 10px;
+            margin-top: 5px;
         }
 
         .skills {
@@ -89,10 +98,10 @@
 
         .skills span {
             background-color: #f0f0f0;
-            margin: 5px;
+            margin: 3px;
             padding: 5px 10px;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .typewriter {
@@ -165,25 +174,20 @@
             margin: 0px;
         }
 
-        .language {
-            margin-bottom: 10px;
-        }
-
     </style>
 </head>
 <body>
-<div class="about-section">
-    <h1 class="typewriter first-line">Hello, I'm Khang!</h1>
-    <p class="typewriter second-line">"I’m a software developer with over 4 years of experience, mainly in Node.js, React.js"</p>
-    <p class="typewriter third-line">"I enjoy solving problems, optimizing systems, learning new skills, and exploring languages and technologies."</p>
-    <p class="typewriter forth-line">"Check out my CV below for more information!"</p>
-</div>
+<!--<div class="about-section">-->
+<!--    <h1 class="typewriter first-line">Hello, I'm Khang!</h1>-->
+<!--    <p class="typewriter second-line">"I’m a software developer with over 4 years of experience, mainly in Node.js, React.js"</p>-->
+<!--    <p class="typewriter third-line">"I enjoy solving problems, optimizing systems, learning new skills, and exploring languages and technologies."</p>-->
+<!--    <p class="typewriter forth-line">"Check out my CV below for more information!"</p>-->
+<!--</div>-->
 <div class="container">
     <!-- Header -->
     <h1>Le Van Khang</h1>
     <p class="contact"><span>(+84) 382379168</span></p>
     <p class="contact"><span>khangleswe@gmail.com</span></p>
-    <p class="contact"><a href="https://khangleswe.github.io/">khangleswe.github.io</a></p>
 
     <!-- Experience Section -->
     <div class="section">
@@ -193,7 +197,7 @@
             <p class="title-info">FullStack JS Developer (Oct 2019 – Dec 2024)</p>
             <ul>
                 <li>Maintained, optimized old features, and developed new features for the company’s products.</li>
-                <li>Analyzed requirements and designed project architecture with a focus on scalability.</li>
+                <li>Analyzed requirements and designed architecture for new projects with a focus on scalability.</li>
                 <li>Implemented Jenkins Gitlab CI/CD pipelines for existing products.</li>
                 <li>Led a team for 2 years, providing technical leadership and ensuring efficient project execution and team collaboration.</li>
             </ul>
@@ -202,24 +206,23 @@
 
     <div class="section">
         <h2>Projects</h2>
-        <div>
-            <p><strong>Bot</strong> (Python)</p>
+        <div class="projects">
+            <p class="project"><strong>Bot</strong> (Python)</p>
             <ul>
                 <li>Developed new AI feature for Telegram bot in Python, using the ChatGPT API and Milvus</li>
             </ul>
-            <p><strong>Scraping</strong> (Node, Go).</p>
+            <p class="project"><strong>Scraping</strong> (Node, Go).</p>
             <ul>
                 <li>Implemented auto-login for API access through HTTP requests and Cheerio for scraping.</li>
                 <li>Optimized report generation algorithm to reduce processing time, using Go routines to leverage CPU cores for parallel processing.</li>
                 <li>Reduced server costs by integrating serverless</li>
             </ul>
-            <p><strong>Accounting</strong> (Node,ReactJS).</p>
+            <p class="project"><strong>Accounting</strong> (Node,ReactJS).</p>
             <ul>
                 <li>Applied caching and optimized database queries (indexing and query batching) to improve API efficiency.</li>
                 <li>Frontend Optimization: Applied Code-Splitting, Lazy loading and Fixed rendering issues for better frontend performance and user experience.</li>
             </ul>
-
-            <p><strong>Capture Image</strong> (Node)</p>
+            <p  class="project"><strong>Capture Image</strong> (Node)</p>
             <ul>
                 <li>Applied puppeteer for automation capture, optimized RAM usage using headless mode, and reduced overhead by leveraging browser context. Implemented RabbitMQ to distribute load across workers and scaled instance groups based on metrics.</li>
             </ul>
@@ -254,7 +257,7 @@
     <div class="section">
         <h2>Certificates</h2>
         <div class="certificates">
-            <p class="sub-info">Fsoft Devops Foundation</p>
+            <p class="certificate">Fsoft Devops Foundation</p>
         </div>
     </div>
 
