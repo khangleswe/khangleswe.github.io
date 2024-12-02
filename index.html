@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>khangleswe.github.io</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #ffffff;
@@ -48,8 +47,8 @@
             margin-left: 20px;
         }
 
-        .section {
-            margin-bottom: 20px;
+        .section h2 {
+            text-align: center;
         }
 
         .section h3 {
@@ -85,6 +84,7 @@
         .skills {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .skills span {
@@ -181,28 +181,47 @@
 <div class="container">
     <!-- Header -->
     <h1>Le Van Khang</h1>
-    <p class="contact">Phone: <a href="#">(+84) 382379168</a></p>
-    <p class="contact">Email: <a href="#">khangleswe@gmail.com</a></p>
+    <p class="contact"><span>(+84) 382379168</span></p>
+    <p class="contact"><span>khangleswe@gmail.com</span></p>
+    <p class="contact"><a href="https://khangleswe.github.io/">khangleswe.github.io</a></p>
 
     <!-- Experience Section -->
     <div class="section">
         <h2>Experience</h2>
         <div>
             <h3>VW Tech</h3>
-            <p class="title-info">FullStack JS Developer | Oct 2019 – Dec 2024</p>
+            <p class="title-info">FullStack JS Developer (Oct 2019 – Dec 2024)</p>
             <ul>
                 <li>Maintained, optimized old features, and developed new features for the company’s products.</li>
                 <li>Analyzed requirements and designed project architecture with a focus on scalability.</li>
-                <li>Implemented Jenkins CI/CD pipelines for existing products.</li>
-                <li>Utilizing serverless, instance groups, and ECS to optimize costs and scalability.</li>
+                <li>Implemented Jenkins Gitlab CI/CD pipelines for existing products.</li>
                 <li>Led a team for 2 years, providing technical leadership and ensuring efficient project execution and team collaboration.</li>
-                <li>Project Highlights:</li>
-                <ul>
-                    <li><strong>Capture Project:</strong> Utilized Puppeteer for image capture, optimized RAM usage by using headless mode and leveraging browser context. Implemented RabbitMQ to distribute load across workers and scaled instance groups based on metrics.</li>
-                    <li><strong>Crawling Project:</strong> Implemented auto-login and used cookies for API access through HTTP requests and Cheerio for scraping.</li>
-                    <li><strong>AI Bot Project:</strong> Developed a Telegram bot in Python using the ChatGPT API and Milvus</li>
-                    <li><strong>Report Generation Project:</strong>  Optimized report generation logic using Go routines for fast, high-performance execution. Applied caching and optimized database queries (indexing and query batching) to improve efficiency.</li>
-                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div>
+            <p><strong>Bot</strong> (Python)</p>
+            <ul>
+                <li>Developed new AI feature for Telegram bot in Python, using the ChatGPT API and Milvus</li>
+            </ul>
+            <p><strong>Scraping</strong> (Node, Go).</p>
+            <ul>
+                <li>Implemented auto-login for API access through HTTP requests and Cheerio for scraping.</li>
+                <li>Optimized report generation algorithm to reduce processing time, using Go routines to leverage CPU cores for parallel processing.</li>
+                <li>Reduced server costs by integrating serverless</li>
+            </ul>
+            <p><strong>Accounting</strong> (Node,ReactJS).</p>
+            <ul>
+                <li>Applied caching and optimized database queries (indexing and query batching) to improve API efficiency.</li>
+                <li>Frontend Optimization: Applied Code-Splitting, Lazy loading and Fixed rendering issues for better frontend performance and user experience.</li>
+            </ul>
+
+            <p><strong>Capture Image</strong> (Node)</p>
+            <ul>
+                <li>Applied puppeteer for automation capture, optimized RAM usage using headless mode, and reduced overhead by leveraging browser context. Implemented RabbitMQ to distribute load across workers and scaled instance groups based on metrics.</li>
             </ul>
         </div>
     </div>
